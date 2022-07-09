@@ -1,14 +1,11 @@
 <template>
     <div class="ad">
-        <Carousel autoplay loop height="15rem">
+        <Carousel autoplay loop height="16rem" autoplay-speed="4000">
             <CarouselItem>
-                <div class="demo-carousel"><img alt="Head logo" src="../assets/headPic.jpg" /></div>
+                <div class="demo-carousel"><img alt="Head logo" src="../assets/xiProvide.jpg" /></div>
             </CarouselItem>
             <CarouselItem>
-                <div class="demo-carousel"><img alt="Head logo" src="../assets/logo.png" /></div>
-            </CarouselItem>
-            <CarouselItem>
-                <div class="demo-carousel"><img alt="Head logo" src="../assets/headPic.jpg" /></div>
+                <div class="demo-carousel"><img alt="Head logo" src="../assets/door.jpg" /></div>
             </CarouselItem>
             <CarouselItem>
                 <div class="demo-carousel"><img alt="Head logo" src="../assets/logo.png" /></div>
@@ -24,7 +21,5 @@
 </script>
 
 <style scoped>
-  .ad{
-    /*height: 20%;*/
-  }
+
 </style>

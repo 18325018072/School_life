@@ -2,9 +2,14 @@
     <div class="appvue">
         <header>
             <div class="appHeader">
-                <a href="../public/index.html">
-                    <img alt="hn_log" src="./assets/schoolLog.png" style="width:150px" />
-                </a>
+                <div class="titlename">
+                    <a href="../public/index.html">
+                        <img alt="hn_log" src="./assets/schoolLog.png" style="width:150px" />
+
+                    </a>
+                    Campus service platform
+                </div>
+
                 <nav>
                     <router-link to="/home">首 页</router-link>
                     <span class="line" />
@@ -50,25 +55,37 @@
 
     .appvue {
         display: flex;
+        width: 1690px;
         min-height: 100vh;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     /* 上 */
     header {
         height: 3.6rem;
+        width: 1690px;
         background-color: #004098;
 
         position: fixed;
         top: 0;
-        left: 0;
-        right: 0;
+        z-index: 100;
     }
 
+    .titlename {
+        color: white;
+        font-size: 26px;
+        font-family: 'Lucida Handwriting', cursive;
+    }
 
+    header a {
+        /* width: 25rem; */
+        margin-right: 0.5rem;
+    }
 
     .appHeader {
-        padding: 0.7rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
 
         display: flex;
         height: 100%;
@@ -77,7 +94,7 @@
     }
 
     nav a {
-        font-size: .9rem;
+        font-size: 1rem;
         color: gray;
     }
 

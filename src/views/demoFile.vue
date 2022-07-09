@@ -1,15 +1,12 @@
 <template>
-    <div>
-        123132132
-        <Space wrap>
-            <Button type="primary" @click="open(false)">Open notice</Button>
-            <Button @click="open(true)">Open notice(only title)</Button>
-        </Space>
-    </div>
-
+    <Space wrap>
+        <Button type="primary" @click="open(false)">Open notice</Button>
+        <Button @click="open(true)">Open notice(only title)</Button>
+    </Space>
 </template>
 <script>
     export default {
+        name: 'Test',
         methods: {
             open(nodesc) {
                 this.$Notice.open({
